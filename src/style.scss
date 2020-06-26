@@ -13,6 +13,7 @@ $container-color:#2d2d2d;
 $display-color:#1e1e1e;
 $pad-color:#7e7e7e;
 $pad-shadow:#4e4e4e;
+$machine-width: 50%;
 
 body{
  font-family: $font-text;
@@ -22,36 +23,45 @@ body{
 
 #drum-machine{
  background:$container-color;
- height:459px;
- width: 400px;
- margin-top: 130px;
- padding:25px;
- border-radius: 10px;;
+ height:61vmin;
+ width: 55vmin;
+ margin-top: 20vmin;
+ padding:3vmin;
+ border-radius: 2vmin;
+
 }
 
 #display{
  background: $display-color;
- height:40px;
- width: 250px;
+ height:5vmin;
+ width: 30vmin;
  margin-left: auto;
  margin-right: auto;
  text-align: center;
- padding-top: 7px;
- margin-bottom: 20px;
- border-radius: 5px;
+ padding-top: .7vmin;
+ margin-bottom: 1.7vmin;
+ border-radius: 1vmin;
+ font-size: 2.4vmin;
 }
 
 .drum-pad{
- height:110px;
  background:$pad-color;
- margin:5px;
- font-size: 20px;
- padding-top: 10%;
- border-radius: 30px;
- box-shadow: 0 5px $pad-shadow;
+ margin:1vmin;
+ font-size: 3vmin;
+ padding-top: 4.9vmin;
+ border-radius: 3vmin;
+ box-shadow: 0 1vmin $pad-shadow;
+ width:15vmin;
+ margin-right: auto;
+ margin-left: auto;
+}
+
+.row{
+ height:16vmin;
+ margin: auto;
 }
 
 .drum-pad:active{
-box-shadow: 0 0px $display-color;
-transform: translateY(5px);
+box-shadow: 0 0 $display-color;
+transform: translateY(1vmin);
 }

@@ -54,7 +54,7 @@ function App(){
 
   function DrumButton(props){
       return (
-      <div className="drum-pad col" id={"drum-pad-" + props.btnName} onClick={() => {playSound(props.btnName);}} >
+      <div className="drum-pad" id={"drum-pad-" + props.btnName} onClick={() => {playSound(props.btnName);}} >
           <p className="text-center">{props.btnName}</p>       
           <audio className="clip" id={props.btnName} src = {props.srcName}></audio>
           {useKey(props.btnName)}
